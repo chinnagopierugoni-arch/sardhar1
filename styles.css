@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4')
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content button {
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.section {
+  padding: 70px 10%;
+}
+
+.section.light {
+  background: #f8fafc;
+}
+
+.section.dark {
+  background: #0f172a;
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.speakers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.speaker img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.agenda div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #334155;
+  padding: 12px 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+footer {
+  background: #7c3aed;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.venue {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 350px;
+}
+
+.venue-image {
+  background: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d")
+    center/cover no-repeat;
+}
+
+.venue-content {
+  background: #e5e7eb;
+  padding: 60px;
+}
+
+.venue-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+footer button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.sponsors {
+  background: #7c3aed;
+  color: white;
+  text-align: center;
+  padding: 70px 10%;
+}
+
+.sponsors .subtitle {
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.sponsor-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.event-summary {
+  background: #0f172a;
+  color: white;
+  padding: 60px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  align-items: center;
+  gap: 20px;
+}
+
+.event-summary button {
+  background: #7c3aed;
+  color: white;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
